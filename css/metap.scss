@@ -1,0 +1,42 @@
+---
+---
+@charset "utf-8";
+
+/* */
+
+$color-1: rgb(60, 150, 120);
+$color-2: rgb(20, 180, 50);
+
+$header-background: linear-gradient(165deg, $color-1, $color-2);
+$header-color-text: white;
+
+$footer-background: $header-background;
+$footer-color-text: $header-color-text;
+
+$color-title: $color-1;
+
+$spacing-unit: .5rem;
+
+header {
+    background: $header-background;
+    color: $header-color-text;
+    padding: $spacing-unit;
+
+    a {
+        color: $header-color-text;
+    }
+}
+
+footer {
+    background: $footer-background;
+    color: $footer-color-text;
+    padding: $spacing-unit;
+}
+
+body {
+    font-family: Segoe UI, sans-serif;
+}
+
+h1, h2, h3, H4, h5 {
+    color: $color-title;
+}
